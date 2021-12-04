@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="item input">
+            <form name="form"><input type="text" name="textview" readonly></form>
+        </div>
+
+        <div class="item clean tech" onclick="clean()">C</div>
+        <div class="item back tech" onclick="back()">&larr;</div>
+
+        <div class="item" onclick="insert('7')">7</div>
+        <div class="item" onclick="insert('8')">8</div>
+        <div class="item" onclick="insert('9')">9</div>
+        <div class="item tech" onclick="insert('*')">&times;</div>
+
+        <div class="item" onclick="insert('4')">4</div>
+        <div class="item" onclick="insert('5')">5</div>
+        <div class="item" onclick="insert('6')">6</div>
+        <div class="item tech" onclick="insert('/')">&divide;</div>
+        <div class="item" onclick="insert('1')">1</div>
+        <div class="item" onclick="insert('2')">2</div>
+        <div class="item" onclick="insert('3')">3</div>
+        <div class="item tech" onclick="insert('+')">+</div>
+        <div class="item zero" onclick="insert('0')">0</div>
+        <div class="item" onclick="insert('.')">.</div>
+        <div class="item tech" onclick="insert('-')">-</div>
+
+        <div class="item equal tech" onclick="equal()">=</div>
+
+
+        <div class="radio__buttons">
+            <div class="radio__btn__container">
+                <input class="radio__btn" type="radio" name="mode" value="int" checked>
+                <span class="radio__btn__text">
+                Integer
+                </span>
+            </div>
+            <div class="radio__btn__container">
+                <input class="radio__btn" type="radio" name="mode" value="float">
+                <span class="radio__btn__text">
+                Float
+             </span>
+            </div>
+        </div>
+        <div class="chechbox__container">
+            <input class="checkbox" type="checkbox" checked>
+            <label for="priory">Priory</label>
+
+        </div>
+        <div class="buttons__container">
+            <button class="button button__1">Вывести результаты</button>
+            <button class="button button__2">Отправить на сервер</button>
+        </div>
+
+
+        <script src="script.js">
+        </script>
+</body>
+
+</html>
